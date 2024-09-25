@@ -201,6 +201,79 @@ footer a {
 .burger {
     display:none;
 }
+.navbar ul .work {
+    position: relative; 
+    display: flex; 
+    z-index: 10; 
+}
+
+.navbar ul .work ul {
+    position: absolute; 
+    flex-direction: column;
+    left: 0; 
+    top: 100%; 
+    width: 100px;
+    display: none; 
+    padding: 0;
+    z-index: 20; 
+}
+
+.navbar ul .work ul li {
+    z-index: 20; 
+    background-color: #7cc6e5;
+    margin-bottom: 2px; 
+}
+
+.navbar ul .work:hover ul {
+    display: block; 
+}
+
+.navbar ul .work ul li:hover {
+    background-color: white; 
+    border-radius: 0; 
+}
+.form {
+    flex-direction: column; /* Arrange the children of the .form container in a column layout */
+}
+
+.form form {
+    display: flex; /* Use flexbox for the form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+.form form fieldset {
+    display: flex; /* Use flexbox for the fieldset layout */
+    flex-direction: column; /* Arrange fieldset elements in a column */
+    width: 50%; /* Set the width of the fieldset to 50% of the container */
+    margin: auto; /* Center the fieldset horizontally */
+    margin-top: 30px; /* Add a margin of 30px to the top */
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom */
+}
+
+.form form fieldset input {
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom of each input element */
+}
+
+.form form fieldset legend {
+    text-align: center; /* Center the legend text */
+    font-size: 1.2rem; /* Set the font size of the legend text to 1.2rem */
+    font-weight: bold; /* Make the legend text bold */
+}
+.form form button {
+    width: 200px; /* Set the width of the button to 200px */
+    font-size: 1.2rem; /* Set the font size of the button text to 1.2rem */
+    background-color: #24779b; /* Set the background color of the button */
+    color: white; /* Set the text color of the button to white */
+    margin: auto; /* Center the button horizontally */
+    margin-bottom: 20px; /* Add a margin of 20px to the bottom */
+}
+
+.form form button:hover {
+    font-size: 1.2rem; /* Maintain the font size of the button text on hover */
+    background-color: #91130c; /* Change the background color of the button on hover */
+    color: rgb(248, 243, 243); /* Change the text color of the button on hover */
+}
+
 
 @media (max-width: 700px) {
     .container {
@@ -311,8 +384,7 @@ footer a {
         margin-top:10px;
     }
     .navbar ul li:hover {
-        color: white;
-        background-color: black;
+        background-color: white;
         transform: scale(1.07);
         transition: 0.4s ease;
         border-radius: 5%
@@ -342,6 +414,41 @@ footer a {
     .navbar.open .burger span:nth-child(3){
         transform:translateY(0) rotate(-45deg);
     }
+    .navbar ul .work ul {
+        position: absolute;
+        flex-direction: column; 
+        left: 10px; 
+        top: 0; 
+        width: 100px;
+        display: none; 
+        padding: 0; 
+        z-index: 20; 
+    }
+    
+    .navbar ul .work ul li {
+        margin-top: 0; 
+        margin-bottom: 10px; 
+        background-color: unset; 
+        font-size: 1.2rem; 
+        margin-left: 10px; 
+        color: black; 
+    }
+    
+    .navbar ul .work ul li:hover {
+        background-color: black; 
+    }
+    
+    .navbar ul .work ul li:hover a:hover {
+        color: white; 
+    }
+    
+    .navbar ul .work:hover ul li a {
+        color: black; 
+    }
+    .form form fieldset{
+        width: 80%;
+    }
+    
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
@@ -352,6 +459,9 @@ footer a {
         width: 320px;
         height: 200px;
         margin: auto;
+    }
+    .form form fieldset{
+        width: 65%;
     }
 }
 .container-video p {
