@@ -344,7 +344,106 @@ footer a {
     margin: auto;
     font-size: 1.2rem;
 }
+.API {
+    display: flex;
+    flex-direction: column;
+}
 
+.API .Petro {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Petro img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+.API .Albuquerque {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+.API .Albuquerque img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+.API .Arizona {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.API .Arizona img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Petro img{
+    border-radius: 8px;
+}
+.API .Albuquerque img {
+    border-radius: 8px;
+}
+.API .Arizona img {
+    border-radius: 8px;
+}
+.API .Petro span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.API .Albuquerque span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.API .Arizona span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.city-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.city-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.city-section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.city-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.city-images img {
+    width: 30%;
+    border-radius: 8px;
+}
 
 @media (max-width: 700px) {
     .container {
@@ -522,7 +621,41 @@ footer a {
     .math form fieldset {
         width: 70%;
     }
+    .API .Petro {
+        width: 100%;
+    }
+    .API .Albuquerque {
+        width: 100%;
+    }
+    .API .Arizona {
+        width: 100%;
+    }
+    .API .Petro span {
+        font-size: 1.05 rem;
+    }
+    .API .Albuquerque span {
+        font-size: 1.05rem;
+    }
+    .API .Arizona span {
+        font-size: 1.05rem;
+    }
     
+    .city-images {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .city-images img {
+        width: 100%;
+    }
+
+    .city-section h2 {
+        font-size: 22px;
+    }
+
+    .city-section p {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
