@@ -639,7 +639,14 @@ footer a {
     .API .Arizona span {
         font-size: 1.05rem;
     }
-    
+    .API .Petro img, 
+    .API .Arizona img, 
+    .API .Albuquerque img, 
+    .city-images img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
     .city-images {
         flex-direction: column;
         gap: 15px;
