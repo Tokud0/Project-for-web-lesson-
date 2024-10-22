@@ -621,32 +621,26 @@ footer a {
     .math form fieldset {
         width: 70%;
     }
-    .API .Petro {
-        width: 100%;
-    }
-    .API .Albuquerque {
-        width: 100%;
-    }
+    .API .Petro, 
+    .API .Albuquerque, 
     .API .Arizona {
-        width: 100%;
+        flex-direction: column;
     }
-    .API .Petro span {
-        font-size: 1.05 rem;
-    }
-    .API .Albuquerque span {
-        font-size: 1.05rem;
-    }
-    .API .Arizona span {
-        font-size: 1.05rem;
-    }
+
     .API .Petro img, 
     .API .Arizona img, 
-    .API .Albuquerque img, 
-    .city-images img {
-        width: 100%;
-        height: auto;
-        margin: auto;
+    .API .Albuquerque img {
+        width: 100%; /
     }
+
+    .API .Petro span, 
+    .API .Arizona span, 
+    .API .Albuquerque span {
+        text-align: center;
+        display: block;
+        width: 100%; 
+    }
+
     .city-images {
         flex-direction: column;
         gap: 15px;
